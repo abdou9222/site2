@@ -1,0 +1,23 @@
+body{
+    background-color: red;
+
+}
+
+button {
+    width: 250px;
+    height: 200px;
+    background-color: blue;
+    border: 2px solid white;
+    color: white;
+    font-size: 3em;
+    margin: 30px;
+    transition: 0.2;
+
+}
+
+button:hover {
+    background-color: aqua;
+    border: 2px solid black;
+    color: black;
+    transition: 150ms;
+}
