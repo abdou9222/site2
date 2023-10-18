@@ -1,0 +1,46 @@
+body{
+    background-color: aqua;
+}
+button{
+    width: 120px;
+    height: 100px;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 26px;
+    color: white;
+    font-size: 1,5em;
+    margin: 30px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: white;
+    border: 2px solid  solid black;
+    color: black;
+    transition: 150ms;
+}
+input.t{
+    width: 120px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    color: black;
+    font-size: 1,5em;
+    margin: 30px;
+    font-family: Verdana;
+    padding: 10px;
+}
+input.t34{
+    width: 250px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
+    font-size: 2em;
+    margin: 5px;
+    font-family: Verdana;
+    padding: 10px;
+    text-align: center;
+}
