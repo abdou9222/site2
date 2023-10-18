@@ -1,0 +1,48 @@
+div.containerall {
+    border: 5px solid red;
+    padding: 20px;
+    margin-right: 20%;
+    margin-left: 20%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+div.containerpack {
+    border: 5px solid purple;
+    box-shadow: rgba(40, 64, 67, 0.1) 0px 1px 2px 0px, rgba(50, 61, 59, 0.10) 0px 1px 3px 1px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+div.containerpacklast {
+    border: 3px solid purple;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(56, 66, 64, 0.10) 0px 1px 3px 1px;
+    padding: 20px;
+}
+
+div.container1 {
+    border: 3px solid grey;
+}
+
+img {
+    max-width: 300%;
+    max-height: 300%; 
+    border-radius: 3px;
+    border: 3px solid grey;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+p {
+    font-family: Arial, sans-serif;
+}
+
+p.pt {
+    font-family: Bahnschrift;
+}
+
+label {
+    font-family: Trebuchet MS;
+}
+
+td.gt {
+    padding-right: 78px;
+}
