@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="tp7.js"></script>
+   <link rel="stylesheet" href="tp7.css">
+    <title> Calculatrice </title>
+</head>
+<body>
+    <center>
+        <h1>Calculatrice</h1>
+        <div>
+            <input class="t" placeholder="premier chiffre " type="number" name="t1" id="t1">
+            <input class="t" placeholder="deuxieme chiffre " type="number" name="t2" id="t2">
+        </div>
+
+        <div>
+            <button onclick="addition()">+</button>
+            <button onclick="soustraction()">-</button>
+            <button onclick="division()">/</button>
+            <button onclick="multiplication()">x</button>
+        </div>
+        <div>
+            <button onclick="parite()">parite</button>
+            <button onclick="permute()">permute</button>
+        </div>
+        <div>
+            <input class="t34" placeholder=" résultat " type="text" name="t3" id="t3" readonly>
+        </div>
+        <div>
+            <input class="t34" placeholder="pair ou impaire ? " type="text" name="t4" id="t4" readonly>
+        </div>
+    </center>
+</body>
+</html>
