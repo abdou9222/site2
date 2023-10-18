@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<center><h1><u> Page d'accueil</u></h1></center>
+
+<iframe src="liens.html" width="30%" height="800px" name="f1"></iframe>
+<iframe src="affichage.html" width="65%" height="800px" name="f2"></iframe>
+<a href="presentationperso.html"></a>
+
+
+
+
+
+</body>
+</html>
