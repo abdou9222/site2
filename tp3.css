@@ -1,0 +1,44 @@
+header
+{
+    background-color: #3448db;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+body
+{
+    background-color: red;
+}
+
+h1
+{
+    font-size: 24px;
+
+}
+
+section
+{
+    padding: 30px;
+
+}
+
+h2
+{
+    font-size: 24px;
+    color: blue;
+}
+p
+{
+    font-size: 17px;
+    line-height: 2;
+    color: #555;
+}
+
+footer
+{
+    background-color: pink;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
