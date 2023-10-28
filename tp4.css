@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(134, 134, 134);
+}
+
+header, footer{
+    display: flex;
+
+    height: 64px;
+    width: 90%;
+
+    padding: 5px;
+    margin: 20px auto;
+    
+    border: 3px solid rgb(177, 179, 274);
+    border-radius: 10px;
+    
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 600;
+}
+
+header{
+    font-size: 25px;
+
+    background-color: rgb(219, 390, 247);
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+}
+
+section{
+    height: 500px;
+    width: 29%;
+
+    margin: 0.5%;
+
+    /*float: left;*/ /*Ne permet pas d'aligner horizontalement les différentes section, j'ai donc remplacé par un display flex*/
+
+    border: 3px solid rgb(177, 148, 204);
+    border-radius: 10px;
+}
+
+.s1{
+    background-color: rgb(187, 240, 240);
+}
+
+.s2{
+    background-color: rgb(167, 211, 179);
+}
+
+.s3{
+    background-color: rgb(202, 152, 148);
+}
+
+.intro{
+    display: flex;
+
+    height: 60px;
+
+    margin: 3px;
+
+    border: 3px solid rgb(177, 148, 204);
+    border-radius: 10px;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+
+    background-color: rgb(219, 190, 247);
+}
+
+p{
+    padding: 12px;
+
+    font-size: 25px;
+}
+
+img{
+    height: auto;
+    width: 100%;
+}
+
+footer{
+    font-size: 20px;
+
+    background-color: blanchedalmond;
+
+    /*clear: both;*/
+}
