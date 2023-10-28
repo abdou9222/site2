@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(167, 91, 173);
+}
+
+#cercle {
+    margin: 10px 0;
+    height: 120px;
+    width: 120px;
+    border-radius: 70px;
+    border: 3px solid rgb(167, 10, 10);;
+}
+
+.core{
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 8px;
+    margin: auto;
+    margin-top: 50px;
+
+    height: 300px;
+    width: 400px;
+    
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff;
+
+    border-radius: 10px;
+
+    transition: color 0.3s ease, transform 0.3s ease; /* en lien avec hover */
+}
+
+.core:hover{
+    transform: scale(1.1);
+
+    background-color: #d6d6d6;
+}
+
+.core h1{
+    margin: 2px 0;
+    color: rgb(167, 10, 10);
+}
+
+.core p{
+    margin: 2px 0;
+}
