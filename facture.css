@@ -1,0 +1,54 @@
+h1{
+    text-align: center;
+    color: aqua;
+    font-family: verdana;
+    font-size: 2em;
+}
+table{
+    background-color: beige;
+    width: 100%;
+    border-collapse: separate;
+}
+
+td{
+    padding: 10px;
+    border-radius: 30px;
+    height: 50px;
+    width: 150px;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: azure;
+    border: 3px solid black;
+}
+input{
+    display: table-cell;
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    flex: 2;
+    text-align: center;
+    border: 1px solid  lightcyan;
+    background-color: lightcyan;
+}
+
+input::placeholder{
+    text-align: center;
+    border: 1px solid lightgrey;
+}
+button{
+    width: 150px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 30px;
+    font-size: 1em;
+    background-color: lightgrey;
+}
+
+input[type=text]
+{
+    font-size: 1em;
+}
+
+button:hover{
+    color: paleturquoise;
+}
