@@ -1,19 +1,19 @@
-function calculer(){
-    var a = document.getElementById(p1).Value;
-    var b = document.getElementById(q1).Value;
-    var c = Number(a)*Number(b);
-    r1.Value = c;
-    var d = document.getElementById(p2).Value;
-    var e = document.getElementById(q2).Value;
-    var f = Number(d)*Number(e);
-    r2.Value = f;
-    var g = document.getElementById(p3).Value;
-    var h = document.getElementById(q3).Value;
-    var i = Number(g)*Number(h);
-    r3.Value = i;
-    var j = Number(c)+Number(f)+Number(i)
-    r4.Value = j;
+fonction calculer(){
+    var a2 = document.getElementById("a2").value;
+    var a3 = document.getElementById("a3").value;
+    var cala = (Nombre(a2)*Nombre(a3))
+    a4.value = cala;
+    var b2 = document.getElementById("b2").value;
+    var b3 = document.getElementById("b3").value;
+    var calb = (Nombre(b2)*Nombre(b3))
+    b4.value = calb;
+    var c2 = document.getElementById("c2").value;
+    var c3 = document.getElementById("c3").value;
+    var calc = (Nombre(c2)*Nombre(c3))
+    c4.value = calc;
+    var c = Nombre(cala)+Nombre(calb)+Nombre(calc)
+    d1.valeur = c;
 }
-function reinitialiser(){
-    Window.location.reload();
+fonction réinitialiser(){
+    window.location.reload();
 }
