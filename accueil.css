@@ -1,0 +1,300 @@
+body{
+    background-color: cyan;
+}
+/* banniere */
+header{
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border: 7px double #f3eb00;
+    width: 98%;
+    margin: 5px;
+    margin-bottom:10px;
+    color: #8b8a1b;
+    display: inline-block;
+    font-weight: 800;
+    font-size: 60%;
+    background-color: #f3eb00;
+
+}
+
+/* style de ma div contenant les bouton, l'afficheur des pages et la photo */
+div.cont{
+    border: 10px cyan;
+    background-color:  #f3eb00;
+    height: 760px;
+    width: 97.3%;
+    display: flex;
+    margin: 5px;
+    margin-right: 5%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+    
+}
+/* fin */
+/* div des bouton */
+div.cont1{
+    border: 10px cyan;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 20%;
+    margin: 5px;
+    height: auto;
+    }
+/* fin */
+
+/* la photo a droite du iframe */
+img.ph{
+    position: relative;
+    top: 0px;
+    float: right;
+    margin-left: auto;
+    width: 100px;
+    height: 135px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border: 3px solid #f3eb00 ;
+}
+
+
+/* fin */
+
+iframe.icont{
+    border: 5px cyan;
+    background-color: #f6f5a1 ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    width: 60%;
+    margin: 5px;
+
+}
+
+
+/* pied de page */
+footer{
+    text-align: center;
+    border: 7px double #f3eb00;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    width: 98%;
+    margin: 5px;
+    margin-bottom:10px;
+    color: #8b8a1b;
+    display: inline-block;
+    font-weight: 800;
+    font-size: 60%;
+    background-color:  #f3eb00;
+
+}
+
+
+div#menu{
+    width: 100px;
+}
+div#menu ul{
+    padding: 8px;
+    width: 100px;     
+}
+
+div#menu ul li{
+    position: relative;
+    list-style: none;
+    border-bottom: 1px solid;
+}
+div#menu ul ul{
+    position: absolute;
+    top: 0;
+    left: 100px;
+}
+
+
+div#menu ul ul{
+    position: absolute;
+    top: 0;
+    left: 113px;
+    display: none;
+
+}
+/*DEBUT Permet d'afficher les menu, sous menu et sous sous menu les un a coter des autres */
+div#menu ul.niveau1 li#sousmenu:hover ul.niveau2,
+div#menu ul.niveau2 li#sousmenu:hover ul.niveau3
+{
+    display: block;
+
+}
+/*FIN */
+
+/* début du style des boutons, des 3 menu et sous menu de bouton */
+div#menu ul li.style1{
+    background-color: cyan;
+    border: 2px solid cyan;
+    border-radius: 4px;
+    box-shadow: #8b8a1b 2px 2px 0 0;
+    color: #8b8a1b;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 100%;
+    padding: 3px 18px;
+    line-height: 200%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #8ba915, 0 0 1px yellow, 0 0 1px yellow;
+    user-select: none;
+    transition: 0.1s;
+    width:100%;
+    margin: 0px 500px 0px 15%  ;
+}
+
+div#menu ul li.style1:hover{
+    background-color: cyan;
+    transform: translate(2px, 2px);
+    box-shadow: none;
+    transition: 0.3s;
+}
+
+div#menu ul li.style2{
+    background-color: cyan;
+    border: 2px solid cyan;
+    border-radius: 4px;
+    box-shadow: #8b8a1b 2px 2px 0 0;
+    color: #8b8a1b;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 60%;
+    padding: 3px 18px;
+    line-height: 200%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #8ba915, 0 0 1px yellow, 0 0 1px yellow;
+    user-select: none;
+    transition: 0.1s;
+    width: 100%;
+    margin: 0px 100px 0px 15%  ;
+}
+
+div#menu ul li.style2:hover{
+    background-color: cyan;
+    transform: translate(2px, 2px);
+    box-shadow: none;
+    transition: 0.3s;
+}
+
+
+div#menu ul li.style3{
+    background-color: cyan;
+    border: 2px solid cyan;
+    border-radius: 4px;
+    box-shadow: #8b8a1b 2px 2px 0 0;
+    color: #8b8a1b;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 60%;
+    padding: 3px 18px;
+    line-height: 200%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #8ba915, 0 0 1px yellow, 0 0 1px yellow;
+    user-select: none;
+    transition: 0.1s;
+    width: 100%;
+    margin: 0px 100px 0px 15%  ;
+}
+
+div#menu ul li.style3:hover{
+    background-color: cyan;
+    transform: translate(2px, 2px);
+    box-shadow: none;
+    transition: 0.3s;
+}
+/* C'est le petit coté colorer quand on passe dessus, celui ci est le niveau 1  */
+div#menu ul li:hover {
+    border-right-color: rgb(187, 255, 0);
+}
+/* Celui ci est pour le niveau 2 */
+div#menu ul ul li:hover{
+    border-left-color: #6c6b27;
+    border-right-color: #6c6b27 ;
+}
+/* Celui ci pour le niveau 3 */
+div#menu ul ul ul li:hover{
+    border-left-color: #403f11;
+}
+
+/* fin du style des boutons  */
+/* Pour rendre le site responsif (un minimum, je commence dedans, j'ai essayé*/
+
+
+@media screen and (max-width: 850px) {
+    div.cont{
+        height: 800px;
+    }
+    div#menu ul li.style1,div#menu ul li.style2,div#menu ul li.style3,div#menu li#sousmenu{
+        font-size: 40%;
+        width: 40%;
+    }
+
+    iframe.icont{
+        width: 98%;
+
+    }
+    
+    div#menu ul ul{
+        position: absolute;
+        top: 0;
+        left: 53px;
+        display: none;
+    
+    }
+
+    
+}
+
+@media screen and (max-width: 600px) {
+    iframe.icont{
+        width: 98%;
+
+    }
+
+    img.ph{
+        display: none;
+    }
+    
+    div#menu ul li.style1,div#menu ul li.style2,div#menu ul li.style3,div#menu li#sousmenu{
+        font-size: 10%;
+        width: 10%;
+        padding-left: 8px;
+        margin-left: 20px;
+    }
+    
+    div#menu ul ul{
+        left: 12px;
+    
+    } 
+
+}
+
+@media screen and (max-width: 465px){
+    iframe.icont{
+        width: 68%;
+    }
+
+}
+
+@media screen and (max-width: 425px){
+    div.cont{
+        height: 710px;
+        width: 96%;
+    }
+    iframe.icont{
+        width: 67%;
+    }
+    div#menu ul li.style1,div#menu ul li.style2,div#menu ul li.style3,div#menu li#sousmenu{
+        font-size: 6px;
+        margin-left: 0px;
+    }
+    div#menu ul li.style1,div#menu ul li.style2,div#menu ul li.style3{
+        margin-left: 17px;
+    }
+}
