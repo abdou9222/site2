@@ -1,89 +1,54 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>mission8</title>
-	<link rel="stylesheet" type="text/css" href="mission8.css">
-<script type="text/javascript" src="mission8.js"></script>
-<meta charset="utf-8">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="mission8.css">
+  <script src="mission8.js"></script>
+  <title>Multifunctions</title>
 </head>
-<body>
-
-<center><h1> mission 8</h1></center>
-<table>
-
-	<button onclick="fo0()"> fonction 0</button>
-
-    <button onclick="fo1()"> fonction 1</button>
+<body style="background-color: red;">
+<h1 id="titre1">Page Multi-Fonctions</h1>
 
 
-	<button onclick="fon2()"> fonction 2</button>
+<div class="btn_container">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>  <br>
+  <br>
+  <br>
 
 
-	<button onclick="fon3()"> fonction 3</button>
+<button onclick="set_str()" title="Demande a l'utilisateur une chaine de caractère et l'affiche" id="top_left">1</button>
+<button onclick="sum_values()" title="Addition de 2 valeurs fixes">2</button>
+<button onclick="calc_moyenne()" title="cClcul d'une moyenne avec 3 notes fixes">3</button>
+<button onclick="check_sold()" title="Vérifie si le budget fixe suffit pour l'achat fixe">4</button>
+<button onclick="get_ttc()" title="Demande a l'utilisateur un prix et donne le prix ttc avec 20% de tva en moins" id="top_right">5</button>
+<br>
+<button onclick="get_ttc_v2()" title="Demande a l'utilisateur un prix ainsi qu'on % de tva, le programme affiche le prix ttc">6</button>
+<button onclick="get_ttc_v3()" title="Demande a l'utilisateur un prix ainsi qu'on % de tva, le programme affiche le prix ttc. le prix ttc est affiché en vert si le prix est supérieur a 100 sinon en rouge">7</button>
+<button onclick="send_to_f7()" title="enmene sur une page ou il y a une liste de cocktail, un bouton présent sur la page permet de modifier cette liste uniquement en javascript">8</button>
+<button onclick="times_10()" title="Affiche dans la console tout les nombres multiple de 10 jusqu'a 1000">9</button>
+<button onclick="ask_age()" title="Demande a l'utilisateur un age, le programme répond majeur si l'age est supérieur ou égal a 18 et mineur si inférieur a 18">10</button>
+<br>
+<button onclick="give_postal_code()" title="Écrit dans la console tout les codes postaux possible entre 77000 et 77999">11</button>
+<button onclick="give_mult_5()" title="Affiche toute la table de multiplication de 5">12</button>
+<button onclick="log_some_nums()" title="Affiche dans la console plusieurs nombre et les affichent en quantité en fonction de celui-ci">13</button>
+<button onclick="until_20()" title="Affiche une variable qui vaut 0 jusqu'a ce qu'elle soit égale a 20">14</button>
+<button onclick="build_table()" title="Construit un tableau">15</button>
+<br>
+<button onclick="build_table_v2()" id="bottom_left" title="Demande a l'utilisateur un nombre de colonnes et de lignes, le programme trace ensuite le tableau">16</button>
+<button onclick="get_random()" title="Affiche une liste de 10 nombres générés aléatoirement de 0 a 100">17</button>
+<button onclick="get_random_v2()" title="Affiche une liste de 10 nombres générés aléatoirement de 0 a 10 inclus. le programme affiche ensuite si 10 était présent dans le tirage">18</button>
+<button onclick="get_random_v3()" title="Affiche une liste de 10 nombres générés aléatoirement de 0 a 10 inclus. le programme affiche ensuite le nombre d'occurence de 10 dans la liste">19</button>
+<button onclick="set_random_bgcolor()" id="bottom_right" title="Génère aleatoirement une couleur rgb, le programme met ensuite la couleur de l'arrière plan de l'iframe avec cette dernère">20</button>
+</div>
 
 
-	<button onclick="fon4()"> fonction 4</button>
-
-
-    <button onclick="fon5()"> fonction 5</button>
-
-
-	<button onclick="fon6()"> fonction 6</button>
-
-
-
-	<button onclick="fon7()"> fonction 7</button>
-
-
-
-	<button onclick="fon8()"> fonction 8</button>
-
-
-
-	<button onclick="fon9()"> fonction 9</button>
-
-
-
-	<button onclick="fon10()"> fonction 10</button>
-
-
-
-	<button onclick="fon11()"> fonction 11</button>
-
-
-
-    <button onclick="fon12()"> fonction 12</button>
-
-
-
-	<button onclick="fon13()"> fonction 13</button>
-
-
-
-	<button onclick="fon14()"> fonction 14</button>
-
-
-
-	<button onclick="fon15()"> fonction 15</button>
-
-
-	<button onclick="fon16()"> fonction 16</button>
-
-
-
-	<button onclick="fon17()"> fonction 17</button>
-
-
-
-	<button onclick="fon18()"> fonction 18</button>
-
-
-	<button onclick="fon19()"> fonction 19</button>
-
-
-	<button onclick="fon20()"> fonction 20</button>
-
-
-</table>
 </body>
 </html>

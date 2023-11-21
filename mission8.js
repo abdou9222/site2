@@ -1,208 +1,208 @@
-fonction set_str()
+function set_str()
 {
-  expérience = document.getElementById("experiment-00");
-  text_chain = prompt("Entrez une chaîne : ");
+  experiment = document.getElementById("experiment-00");
+  text_chain = prompt("Entrez a string: ");
   // console.log(experiment.innerHTML);
-  // expérience.innerHTML = text_chain;
+  // experiment.innerHTML = text_chain;
 
-  expérience.src = "à propos de : blanc" ;
+  experiment.src = "about:blank";
 
-// Définit le nouveau HTML de l'iframe
-  experience.contentWindow.document.open();
-  experience.contentWindow.document.write(text_chain);
-  experience.contentWindow.document.close();
+// Set the iframe's new HTML
+  experiment.contentWindow.document.open();
+  experiment.contentWindow.document.write(text_chain);
+  experiment.contentWindow.document.close();
 
 
-  // expérience.innerText = text_chain;
+  // experiment.innerText = text_chain;
 
 }
 
-fonction somme_valeurs()
+function sum_values()
 {
-  une = 42 ;
-  b = 7609 ;
-  résultat = a + b ;
-  alert("le résultat est : " + résultat);
+  a = 42;
+  b = 7609;
+  result = a + b;
+  alert("the result is: " + result);
 }
 
-fonction calc_moyenne()
+function calc_moyenne()
 {
-  note_math = 11 ;
-  note_hg = 9 ;
+  note_math = 11;
+  note_hg = 9;
   note_francais= 16;
-  moyenne = (note_francais + note_math + note_hg) /3;
+  moyenne =  (note_francais + note_math + note_hg) /3;
   alert("La moyenne est de " + moyenne);
 }
 
-fonction check_sold()
+function check_sold()
 {
-  budget = 2333,334 ;
-  achats = 2333,334 ;
-  si(achats <= budget)
+  budget = 2333.334;
+  achats = 2333.334;
+  if(achats <= budget)
   {
-    alert("Vous pouvez tout acheter avec le budget que vous avez, il vous laissera avec " + (budget - achats) + " €")
+    alert("You can buy everything with the budget you have, it will let you with " + (budget - achats) + " €")
   }
-  si(achats > budget)
+  if(achats > budget)
   {
-    alert("On ne peut pas tout acheter avec le budget qu'on a, il faut " + math.abs(budget - achats) + " € de plus")
+    alert("You can't buy everything with the budget you have, you need  " + math.abs(budget - achats) + " € more")
   }
 }
 
 
-fonction get_ttc()
+function get_ttc()
 {
 
-  prix = prompt("Donnez-moi un prix : ");
-  alert("Votre prix ttc est à 20% tva soit " + prix * 0,80);
+  prix = prompt("Give me a price: ");
+  alert("Your ttc price is with 20% tva is " + prix * 0.80);
 }
 
-fonction get_ttc_v2()
+function get_ttc_v2()
 {
-  expérience = document.getElementById("experiment-00");
-  expérience.src = "à propos de : blanc" ;
-  prix = prompt("Donnez-moi un prix : ");
-  tva = prompt("Donnez-moi un % tva : ");
-  alert("Votre prix ttc est de " + Math.ceil(prix * ( 1 - (tva/100))));
+  experiment = document.getElementById("experiment-00");
+  experiment.src = "about:blank";
+  prix = prompt("Give me a price: ");
+  tva = prompt("Give me a tva %: ");
+  alert("Your ttc price is " + Math.ceil(prix * ( 1 - (tva/100))));
 }
 
-fonction get_ttc_v3()
+function get_ttc_v3()
 {
-  expérience = document.getElementById("experiment-00");
-  expérience.src = "à propos de : blanc" ;
-  experience.contentWindow.document.open();
-  prix = prompt("Donnez-moi un prix : ");
-  tva = prompt("Donnez-moi un % tva : ");
+  experiment = document.getElementById("experiment-00");
+  experiment.src = "about:blank";
+  experiment.contentWindow.document.open();
+  prix = prompt("Give me a price: ");
+  tva = prompt("Give me a tva %: ");
   ttc = Math.ceil(prix * ( 1 - (tva/100)));
-  si( ttc > 100)
+  if( ttc > 100)
   {
-    experience.contentWindow.document.body.style.color = "rouge";
+    experiment.contentWindow.document.body.style.color = "red";
   }
-  autre
+  else
   {
-    experience.contentWindow.document.body.style.color = "vert";
+    experiment.contentWindow.document.body.style.color = "green";
   }
-  experience.contentWindow.document.write(ttc);
-  experience.contentWindow.document.close();
+  experiment.contentWindow.document.write(ttc);
+  experiment.contentWindow.document.close();
 }
 
 
-fonction send_to_f7()
+function send_to_f7()
 {
-  expérience = document.getElementById("experiment-00");
-  expérience.src = "à propos de : blanc" ;
-  experience.setAttribute("src","other/f7.html");
-
-}
-
-
-fonction times_10()
-{
-  pour(i = 0; i <= 1000; i+=10)
-  {
-    expérience = document.getElementById("experiment-00");
-    expérience.src = "à propos de : blanc" ;
-    console.log(`${i} est un multiplicateur de 10`);
-
-  }
-}
-
-
-fonction request_age()
-{
-  age = prompt("Quel âge as-tu ?")
-  si (âge >= 18)
-  {
-    alert('Vous êtes Majeur !')
-  }
-  autre
-  {
-    alert('Vous êtes mineur !')
-  }
+  experiment = document.getElementById("experiment-00");
+  experiment.src = "about:blank";
+  experiment.setAttribute("src","other/f7.html");
 
 }
 
 
-fonction give_postal_code()
+function times_10()
 {
-  cp = 77 000 ;
-  tandis que (cp <= 77999)
+  for(i = 0; i <= 1000; i+=10)
+  {
+    experiment = document.getElementById("experiment-00");
+    experiment.src = "about:blank";
+    console.log(`${i} is a multiplier of 10`);
+
+  }
+}
+
+
+function ask_age()
+{
+  age = prompt("How old are you?")
+  if (age >= 18)
+  {
+    alert('Vous etes Majeur!')
+  }
+  else
+  {
+    alert('Vous etes mineur!')
+  }
+
+}
+
+
+function give_postal_code()
+{
+  cp = 77000;
+  while (cp <= 77999)
   {
     console.log(cp)
     cp++;
   }
 }
 
-fonction give_mult_5()
+function give_mult_5()
 {
-  expérience = document.getElementById("experiment-00");
-  n = 5 ;
+  experiment = document.getElementById("experiment-00");
+  n = 5;
   html_content = '';
-  pour(i = 0; i <= 10; i++)
+  for(i = 0; i <= 10; i++)
   {
     html_content += `${n} x ${i} = ${n * i} <br>`
   }
-  expérience.src = "à propos de : blanc" ;
+  experiment.src = "about:blank";
 
-// Définit le nouveau HTML de l'iframe
-  experience.contentWindow.document.open();
-  experience.contentWindow.document.write(html_content);
-  experience.contentWindow.document.close();
+// Set the iframe's new HTML
+  experiment.contentWindow.document.open();
+  experiment.contentWindow.document.write(html_content);
+  experiment.contentWindow.document.close();
 }
 
 
 
-fonction log_some_nums()
+function log_some_nums()
 {
-  expérience = document.getElementById("experiment-00");
+  experiment = document.getElementById("experiment-00");
   html_content = '';
-  pour(i = 1; i <= 5; i++)
+  for(i = 1; i <= 5; i++)
   {
-    pour(j = 1; j <= i; j++)
+    for(j = 1; j <= i; j++)
     {
-      html_content += je;
+      html_content += i;
     }
     html_content += '<br>';
   }
-  expérience.src = "à propos de : blanc" ;
+  experiment.src = "about:blank";
 
-// Définit le nouveau HTML de l'iframe
-  experience.contentWindow.document.open();
-  experience.contentWindow.document.write(html_content);
-  experience.contentWindow.document.close();
+// Set the iframe's new HTML
+  experiment.contentWindow.document.open();
+  experiment.contentWindow.document.write(html_content);
+  experiment.contentWindow.document.close();
 }
 
 
-fonction jusqu'à_20()
+function until_20()
 {
-  expérience = document.getElementById("experiment-00");
+  experiment = document.getElementById("experiment-00");
   variable_de_mon_choix = 0;
-  expérience.src = "à propos de : blanc" ;
+  experiment.src = "about:blank";
 
-// Définit le nouveau HTML de l'iframe
-  experience.contentWindow.document.open();
+// Set the iframe's new HTML
+  experiment.contentWindow.document.open();
 
 
   while (variable_de_mon_choix < 20)
   {
-    experience.contentWindow.document.write(variable_de_mon_choix + "<br>");
+    experiment.contentWindow.document.write(variable_de_mon_choix + "<br>");
     variable_de_mon_choix+=2;
   }
-  experience.contentWindow.document.close();
+  experiment.contentWindow.document.close();
 }
 
 
-fonction build_table()
+function build_table()
 {
-  expérience = document.getElementById("experiment-00");
-  expérience.src = "à propos de : blanc" ;
+  experiment = document.getElementById("experiment-00");
+  experiment.src = "about:blank";
   tableau = '<table style="border: 1px solid black;">';
-  colonne = 2 ;
-  ligne = 5 ;
+  column = 2;
+  row = 5;
 
-  pour(i = 1; i <= ligne; i++)
+  for(i = 1; i <= row; i++)
   {
     tableau += '<tr>';
-    pour(j = 1; j <= colonne; j++)
+    for(j = 1; j <= column; j++)
     {
       tableau += '<td style="border: 1px solid black;">je suis un texte sans importance</td>'
     }
@@ -211,25 +211,25 @@ fonction build_table()
   tableau += '</table>';
 
 
-  experience.contentWindow.document.open();
-  experience.contentWindow.document.write(tableau);
-  experience.contentWindow.document.close();
+  experiment.contentWindow.document.open();
+  experiment.contentWindow.document.write(tableau);
+  experiment.contentWindow.document.close();
 
 
 }
 
-fonction build_table_v2()
+function build_table_v2()
 {
-  expérience = document.getElementById("experiment-00");
-  expérience.src = "à propos de : blanc" ;
+  experiment = document.getElementById("experiment-00");
+  experiment.src = "about:blank";
   tableau = '<table style="border: 1px solid black;">';
-  column = prompt("Combien de colonnes voulez-vous ?");
-  row = prompt("Combien de lignes voulez-vous ?");
+  column = prompt("How many columns do you want ?");
+  row = prompt("How many rows do you want ?");
 
-  pour(i = 1; i <= ligne; i++)
+  for(i = 1; i <= row; i++)
   {
     tableau += '<tr>';
-    pour(j = 1; j <= colonne; j++)
+    for(j = 1; j <= column; j++)
     {
       tableau += '<td style="border: 1px solid black;">je suis un texte sans importance</td>'
     }
@@ -238,96 +238,96 @@ fonction build_table_v2()
   tableau += '</table>';
 
 
-  experience.contentWindow.document.open();
-  experience.contentWindow.document.write(tableau);
-  experience.contentWindow.document.close();
+  experiment.contentWindow.document.open();
+  experiment.contentWindow.document.write(tableau);
+  experiment.contentWindow.document.close();
 
 
 }
 
-fonction get_random()
+function get_random()
 {
-  expérience = document.getElementById("experiment-00");
-  expérience.src = "à propos de : blanc" ;
+  experiment = document.getElementById("experiment-00");
+  experiment.src = "about:blank";
   html_content = '<ul>';
-  nombres_aléatoires = 10 ;
-  pour (i = 1; i <= random_nums; i++)
+  random_nums = 10;
+  for(i = 1; i <= random_nums; i++)
   {
     html_content += '<li>' + Math.floor(Math.random() * 100) + '</li>';
   }
   html_content += '</ul>';
 
-  experience.contentWindow.document.open();
-  experience.contentWindow.document.write(html_content);
-  experience.contentWindow.document.close();
+  experiment.contentWindow.document.open();
+  experiment.contentWindow.document.write(html_content);
+  experiment.contentWindow.document.close();
 }
 
-fonction get_random_v2()
+function get_random_v2()
 {
-  expérience = document.getElementById("experiment-00");
-  expérience.src = "à propos de : blanc" ;
+  experiment = document.getElementById("experiment-00");
+  experiment.src = "about:blank";
   html_content = '<ul>';
-  nombres_aléatoires = 10 ;
-  pour (i = 1; i <= random_nums; i++)
+  random_nums = 10;
+  for(i = 1; i <= random_nums; i++)
   {
-    aléatoire = Math.random(10);
+    random = Math.random(10);
 
-    si (aléatoire == 10)
+    if (random == 10)
     {
-      console.log(`${random} était ce que nous recherchions !`);
+      console.log(`${random} was what we were looking for!`);
     }
-    html_content += '<li>' + aléatoire + '</li>';
+    html_content += '<li>' + random + '</li>';
   }
   html_content += '</ul>';
 
-  experience.contentWindow.document.open();
-  experience.contentWindow.document.write(html_content);
-  experience.contentWindow.document.close();
+  experiment.contentWindow.document.open();
+  experiment.contentWindow.document.write(html_content);
+  experiment.contentWindow.document.close();
 }
 
 
-fonction get_random_v3()
+function get_random_v3()
 {
-  expérience = document.getElementById("experiment-00");
-  expérience.src = "à propos de : blanc" ;
+  experiment = document.getElementById("experiment-00");
+  experiment.src = "about:blank";
   html_content = '<ul>';
-  nombres_aléatoires = 10 ;
-  cptr_10 = 0 ;
-  pour (i = 1; i <= random_nums; i++)
+  random_nums = 10;
+  cptr_10 = 0;
+  for(i = 1; i <= random_nums; i++)
   {
-    aléatoire = Math.floor(Math.random() * 11);
+    random = Math.floor(Math.random() * 11);
 
-    si (aléatoire == 10)
+    if (random == 10)
     {
-      console.log(`${random} était ce que nous recherchions !`);
+      console.log(`${random} was what we were looking for!`);
       cptr_10++;
     }
-    html_content += '<li>' + aléatoire + '</li>';
+    html_content += '<li>' + random + '</li>';
   }
-  html_content += `</ul> <br>10 ont été vus ${cptr_10} fois`;
+  html_content += `</ul> <br>10 was seen ${cptr_10} times`;
 
-  experience.contentWindow.document.open();
-  experience.contentWindow.document.write(html_content);
-  experience.contentWindow.document.close();
+  experiment.contentWindow.document.open();
+  experiment.contentWindow.document.write(html_content);
+  experiment.contentWindow.document.close();
 }
 
 
-fonction set_random_bgcolor()
+function set_random_bgcolor()
 {
-  expérience = document.getElementById("experiment-00");
-  expérience.src = "à propos de : blanc" ;
+  experiment = document.getElementById("experiment-00");
+  experiment.src = "about:blank";
   r = Math.floor(Math.random() * 256);
   g = Math.floor(Math.random() * 256);
   b = Math.floor(Math.random() * 256);
-  couleur = `rgb(${r}, ${g}, ${b})`;
+  color = `rgb(${r}, ${g}, ${b})`;
 
-  experience.style.backgroundColor = couleur;
+  experiment.style.backgroundColor = color;
 }
 
 
-fonction go_to_bonus()
+function go_to_bonus()
 {
-  expérience = document.getElementById("experiment-00");
-  expérience.src = "à propos de : blanc" ;
-  experience.setAttribute("src","other/SuiteMission8.html");
+  experiment = document.getElementById("experiment-00");
+  experiment.src = "about:blank";
+  experiment.setAttribute("src","other/SuiteMission8.html");
 }
