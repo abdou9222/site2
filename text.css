@@ -1,7 +1,7 @@
 body {
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-    background-image: url(https://media.tenor.com/zmzZ__RhM4UAAAAC/dragon-ball-z-goku.gif); /* Remplacez 'votre-gif.gif' par le chemin vers votre GIF */
+    background-image: url(https://64.media.tumblr.com/dfa32a0d786fe7056476c7739b14c4a6/tumblr_nr01fzhkwp1s8yicyo1_540.gifv); /* Remplacez 'votre-gif.gif' par le chemin vers votre GIF */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
