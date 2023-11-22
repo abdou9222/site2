@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: cyan;
+}
+
+.page {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: red;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.entreprise-info {
+    flex: 1;
+}
+
+.entreprise-info img {
+    max-width: 100px;
+}
+
+.facture-info {
+    text-align: right;
+}
+
+h1, h2, h3 {
+    color: red;
+}
+
+#facture-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#destinataire, #envoie {
+    flex: 1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: beige;
+    color: #fff;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#totals {
+    background-color: beige;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#totals p {
+    margin: 5px 0;
+}
+
+#totals input {
+    width: 50px;
+}
+
+#boutons button {
+     background-color: gray;
+    border: 2px solid gray;
+    border-radius: 14px;
+    box-shadow: 2px 2px 5px gray;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px 20px;
+    line-height: 1.5;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #156785, 0 0 1px #156785, 0 0 1px #156785;
+    user-select: none;
+    width: 400px;
+    margin: 5px;
+}
+
+#boutons button:hover {
+    background-color: beige;
+}
