@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="mission9.css">
+  <script src="mission9.js"></script>
+  <title>Facture js</title>
+</head>
+<body style="background-color: red;">
+
+<header id="myheader">
+  <br>
+  <img src="imgpng.png" height="100px" width="75px" style="float: left; margin-left: 25px; margin-right: 10px;">
+
+  <h3>Nom de la compagnie</h3>
+  <p>Adresse postal</p>
+  <p>Details du contact</p>
+
+ </header>
+<div id="tableau_container">
+<table id="tableau_facture"  style="text-align: center; margin-left: auto; margin-right: auto;">
+  <tr>
+    <th class="table_header" style="width: 70%;">DESCRIPTION</th>
+    <th class="table_header" style="width: 10%;">QUANTITÉ</th>
+    <th class="table_header" style="width: 10%;">PRIX UNITAIRE</th>
+    <th class="table_header" style="width: 10%;">TOTAL</th>
+  </tr>
+  <tr class="color1">
+    <td class="right_line desc"><input type="text"  value="Obj1"></td>
+    <td class="right_line qte"><input type="number"  value="0"></td>
+    <td class="right_line prx"><input type="number"  value="0"></td>
+    <td class="right_line tt"><input type="number" " readonly value="0"></td>
+
+  </tr>
+
+  <tr class="color2">
+    <td class="right_line desc"><input type="text" class="input_desc color2" value="Obj2"></td>
+    <td class="right_line qte"><input type="number" class="input_qte color2" value="0"></td>
+    <td class="right_line prx"><input type="number" class="input_prx color2" value="0"></td>
+    <td class="right_line tt"><input type="number" class="input_tt color2" readonly value="0"></td>
+  </tr>
+  <tr class="color1">
+    <td class="right_line desc"><input type="text" class="input_desc color1" value="Obj3"></td>
+    <td class="right_line qte"><input type="number" class="input_qte color1" value="0"></td>
+    <td class="right_line prx"><input type="number" class="input_prx color1" value="0"></td>
+    <td class="right_line tt"><input type="number" class="input_tt color1" readonly value="0"></td>
+  </tr>
+
+  <tr class="color2">
+    <td class="right_line desc"><input type="text" class="input_desc color2" value="Obj4"></td>
+    <td class="right_line qte"><input type="number" class="input_qte color2" value="0"></td>
+    <td class="right_line prx"><input type="number" class="input_prx color2" value="0"></td>
+    <td class="right_line tt"><input type="number" class="input_tt color2" readonly value="0"></td>
+  </tr>
+  <tr class="color1" id="input_row">
+    <td class="right_line"><input type="text" id="description" class="input_desc" value="Item"></td>
+    <td class="right_line"><input type="number" id="quantite" class="input_qte" value="1"></td>
+    <td class="right_line"><input type="number" id="prix" value="0" class="input_prx"></td>
+    <td class="right_line"><input type="number" id="total" value="0.00" readonly class="input_tt"></td>
+  </tr>
+</table>
+</div>
+<div id="div_value">
+<label>Sous total : </label> <input id="soustotal_container" class="value_container" type="text" readonly> <br>
+<label>Remise : </label> <input id="remise_container" type="text" class="value_container" value="10"> <br>
+<label style="margin-left: 5px;">Sous total Moins les remises : </label> <input id="totalwithremise_container" type="text" class="value_container" readonly> <br>
+<label>Taux d'imposition : </label> <input id="tauximposition_container" type="text" class="value_container" value="10"> <br>
+<label>Taxes totales : </label> <input id="taxetotal_container" type="text" class="value_container" readonly> <br>
+<label style="margin-left: 5px;">Frais d'expedition | Manutention : </label> <input id="fraisexpedition_container" type="text" class="value_container" value="5"> <br>
+<hr>
+  <div class="small_container">
+<label>Solde : </label> <input id="solde_container" type="text" class="value_container" readonly> <br>
+  </div>
+  </div>
+<button onclick="Add_row()" title="Entrez dans la ligne ci-dessus toutes les informations!" class="btn" id="btn_addrow">Ajouter une ligne</button>
+
+<button onclick="remplir()" class="btn" id="btn_remplir">Remplir automatiquement</button>
+
+<button onclick="reset()" class="btn" id="btn_reset">Annuler</button>
+
+<button onclick="calculer()" class="btn" id="btn_calculer">Calculer</button>
+
+<button onclick="clear_row()" class="btn" id="btn_clearrow">clear line</button>
+</body>
+</html>

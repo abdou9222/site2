@@ -1,0 +1,147 @@
+
+#monen-tête
+{
+  hauteur : 150px ;
+  couleur de fond : aigue-marine ;
+  marge : 0 ;
+  bordure : 1px blanc uni ;
+  rayon de bordure : 10 px ;
+  marge inférieure : 10 px ;
+}
+
+#Gros_titre
+{
+  Flotter à droite;
+  couleur : gris foncé ;
+  poids de la police : gras ;
+  taille de police : 32 px ;
+  marge droite : 25 px ;
+  marge supérieure : 25 px ;
+}
+/*#tableau_container*/
+/*{*/
+/* rayon-bordure : 10px;*/
+/* bordure : 1px blanc uni ;*/
+/*}*/
+#tableau_facture
+{
+/* rayon-bordure : 10px;*/
+  /*border-top: 1px noir uni;*/
+  /*border-bottom : 1px noir uni ;*/
+  bordure : 1px noir uni ;
+  marge : 0 ;
+
+}
+
+.right_line
+{
+  bordure droite : 1px noir uni ;
+}
+.table_header
+{
+  Couleur blanche;
+  couleur d'arrière-plan : #3388CC ;
+}
+
+.color1
+{
+  couleur de fond : blanc ;
+}
+
+.color2
+{
+  couleur de fond : gris clair ;
+}
+
+
+/*#input_row*/
+/*{*/
+/* texte-align: center;*/
+/* marge-gauche : auto;*/
+/* marge-droite : auto;*/
+/*}*/
+
+
+.input_desc
+{
+  bordure : aucune ;
+  largeur : 99 % ;
+}
+
+.input_qte
+{
+  bordure : aucune ;
+  largeur : 95 % ;
+}
+.input_prx
+{
+  bordure : aucune ;
+  largeur : 95 % ;
+}
+.input_tt
+{
+  bordure : aucune ;
+  largeur : 95 % ;
+}
+
+
+/*#soustotal_container*/
+/*{*/
+/* texte-align: center;*/
+/* bordure : 1px noir uni ;*/
+/* hauteur : 20px;*/
+/* largeur : 50px;*/
+/*}*/
+
+.value_container
+{
+  alignement du texte : centre ;
+  bordure : 1px noir uni ;
+  hauteur : 20px ;
+  largeur : 50 px ;
+  marge : 10px ;
+  rayon de bordure : 5 px ;
+
+}
+
+#div_value
+{
+  rayon de bordure : 10 px ;
+  marge : 10px 75px ;
+  couleur de fond : corail clair ;
+  bordure : 1px blanc uni ;
+  Flotter à droite;
+  aligner le texte : à droite ;
+}
+
+.small_container
+{
+  clarifier les deux;
+  marge inférieure : 5 px ;
+  alignement du texte : centre ;
+  marge gauche : auto ;
+  marge droite : auto ;
+}
+
+
+.btn
+{
+  /*Flotter à droite;*/
+  hauteur : 50px ;
+  largeur : 150 px ;
+  bordure : 1px blanc uni ;
+  rayon de bordure : 10 px ;
+  marge : 15px ;
+  poids de la police : gras ;
+  couleur : bleu ardoise ;
+  couleur de fond : vert clair ;
+  transition : 0,3 s d'entrée et de sortie faciles ;
+  flotteur : gauche ;
+}
+
+.btn : survoler
+{
+  Couleur blanche;
+  couleur de fond : bleu ciel clair ;
+  transformation : échelle (1.01);
+}
