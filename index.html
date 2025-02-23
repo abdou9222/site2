@@ -1,10 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nouveau portfolio</title>
     <link rel="stylesheet" href="text.css">
+    <style>
+        /* Ajout du CSS pour la section latérale */
+        .sidebar {
+            position: fixed;
+            right: 10px;
+            top: 50px;
+            width: 250px;
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+        }
+
+        .sidebar h2 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .sidebar p {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
 
@@ -12,21 +37,20 @@
         <label for="menu-mobile" class="menu-mobile">Menu</label>
         <input type="checkbox" id="menu-mobile" role="button">
         <ul>
-            <li class="menu-html"><a href="#">HTMl</a>
+            <li class="menu-html"><a href="#">HTML</a>
                 <ul class="submenu">
-                    <li><a href="#"> TP HTML 1(absent) </a></li>
-                    <li><a href="#"> TP HTML 2(absent) </a></li>
-                    <li><a href="#"> TP HTML 3(absent) </a></li>
-                    <li><a href="carte.html"> TP HTML 4 </a></li>
-                    
+                    <li><a href="#">TP HTML 1 (absent)</a></li>
+                    <li><a href="#">TP HTML 2 (absent)</a></li>
+                    <li><a href="#">TP HTML 3 (absent)</a></li>
+                    <li><a href="carte.html">TP HTML 4</a></li>
                 </ul>
             </li>
             <li class="menu-css"><a href="#">CSS</a>
                 <ul class="submenu">
-                    <li><a href="tp3.html"> TP CSS 1</a></li>
-                    <li><a href="tp5.html"> TP CSS 2</a></li>
-                    <li><a href="tp4.html"> TP CSS 3 </a></li>
-                    <li><a href="carte.html"> TP CSS 4 </a></li>
+                    <li><a href="tp3.html">TP CSS 1</a></li>
+                    <li><a href="tp5.html">TP CSS 2</a></li>
+                    <li><a href="tp4.html">TP CSS 3</a></li>
+                    <li><a href="carte.html">TP CSS 4</a></li>
                 </ul>
             </li>
             <li class="menu-js"><a href="#">JavaScript</a>
@@ -37,57 +61,49 @@
                     <li><a href="#">JAVASCRIPT4</a></li>
                 </ul>
             </li>
-            
-
-             <li class="menu-php"><a href="#">MY SQL</a>
+            <li class="menu-php"><a href="#">MySQL</a>
                 <ul class="submenu">
-                    <li><a href="sql1.html">MY SQL 1</a></li>
-                    <li><a href="requetesql1.pdf">MY SQL 1.2</a></li>
-                    <li><a href="sql2.html">MY SQL 2</a></li>
-                
-                    
-                    
-                    
-                    
+                    <li><a href="sql1.html">MySQL 1</a></li>
+                    <li><a href="requetesql1.pdf">MySQL 1.2</a></li>
+                    <li><a href="sql2.html">MySQL 2</a></li>
                 </ul>
-
-
-
-
-             <li class="menu-mission"><a href="#">mission</a>
+            </li>
+            <li class="menu-mission"><a href="#">Missions</a>
                 <ul class="submenu">
-                    <li><a href="sitewebfinal.html">MISSION2</a></li>
-                    <li><a href="questionnaire.html">MISSION3</a></li>
-                    <li><a href="cv.html">MISSION4</a></li>
-                    <li><a href="">MISSION5</a></li>
-                    <li><a href="accueil.html">MISSION7</a></li>
-                    <li><a href="mission8.html">MISSION8</a></li>
-                    <li><a href="mission9.html">MISSION9</a></li>
-                    
+                    <li><a href="sitewebfinal.html">MISSION 2</a></li>
+                    <li><a href="questionnaire.html">MISSION 3</a></li>
+                    <li><a href="cv.html">MISSION 4</a></li>
+                    <li><a href="#">MISSION 5</a></li>
+                    <li><a href="accueil.html">MISSION 7</a></li>
+                    <li><a href="mission8.html">MISSION 8</a></li>
+                    <li><a href="mission9.html">MISSION 9</a></li>
                 </ul>
-
-             <li class="menu-certification"><a href="#">certification</a>
+            </li>
+            <li class="menu-certification"><a href="#">Certifications</a>
                 <ul class="submenu">
                     <li><a href="MODULE 1 _ LE RGPD ET SES NOTIONS CLÉS_Attestation du Module 1.pdf">Certification 1</a></li>
-                    <li><a href="Attestation_de_suivi.pdf">certification 2</a></li>
-                    <li><a href="MODULE 3 _ LES RESPONSABILITES DES ACTEURS_Attestation du Module 3.pdf">certification 3</a></li>
-                    <li><a href="MODULE 4 _ LE DPO ET LES OUTILS DE LA CONFORMITÉ_Attestation du Module 4.pdf">certification 4</a></li>
-                    <li><a href="MODULE 5 _ LES COLLECTIVITÉS TERRITORIALES_Attestation du Module 5.pdf">certification 5</a></li>
-                    <li><a href="MOOC1.pdf">certification cybersécurité</a></li>
-
+                    <li><a href="Attestation_de_suivi.pdf">Certification 2</a></li>
+                    <li><a href="MODULE 3 _ LES RESPONSABILITES DES ACTEURS_Attestation du Module 3.pdf">Certification 3</a></li>
+                    <li><a href="MODULE 4 _ LE DPO ET LES OUTILS DE LA CONFORMITÉ_Attestation du Module 4.pdf">Certification 4</a></li>
+                    <li><a href="MODULE 5 _ LES COLLECTIVITÉS TERRITORIALES_Attestation du Module 5.pdf">Certification 5</a></li>
+                    <li><a href="MOOC1.pdf">Certification Cybersécurité</a></li>
                 </ul>
-       
-       
-
+            </li>
             <li class="menu-contact"><a href="carte.html">Contact</a></li>
-             <ul class="submenu">
-                <li class="menu-contact"><a href="carte.html">Contact</a></li>
-                 <li class="menu-contact"><a href="lettredemotivationstage.rtf"> Lettre de motivation</a></li>
-                 <li class="menu-contact"><a href="cv.html"> CV </a></li>
-              </ul>
-        
-
+                <ul class="submenu">
+                    <li><a href="carte.html">Contact</a></li>
+                    <li><a href="lettredemotivationstage.rtf">Lettre de motivation</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                </ul>
+        </ul>
     </nav>
-    
+
+    <!-- Ajout de la section d'explication sur le côté -->
+    <aside class="sidebar">
+        <h2>À propos du site</h2>
+        <p>Ce site regroupe toutes les missions réalisées en première année de BTS SIO SLAM.</p>
+        <p>Les langages utilisés sont : HTML, CSS, JavaScript et MySQL.</p>
+    </aside>
+
 </body>
 </html>
