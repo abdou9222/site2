@@ -3,10 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nouveau portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="text.css">
     <style>
-        /* Ajout du CSS pour la section latérale */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* --- NAVIGATION --- */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 10px 15px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li:hover > a {
+            background-color: #555;
+        }
+
+        /* Sous-menus */
+        .submenu {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            top: 100%;
+            left: 0;
+            width: 200px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul li:hover .submenu {
+            display: block;
+        }
+
+        .submenu li {
+            display: block;
+        }
+
+        .submenu li a {
+            padding: 10px;
+            display: block;
+            color: white;
+        }
+
+        /* --- MENU MOBILE --- */
+        .menu-mobile {
+            display: none;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        #menu-mobile {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul li {
+                width: 100%;
+            }
+
+            .menu-mobile {
+                display: block;
+            }
+
+            #menu-mobile:checked + ul {
+                display: flex;
+            }
+        }
+
+        /* --- SIDEBAR --- */
         .sidebar {
             position: fixed;
             right: 10px;
@@ -29,13 +128,24 @@
             font-size: 14px;
             color: #555;
         }
+
+        /* --- RENDRE LA SIDEBAR RESPONSIVE --- */
+        @media (max-width: 768px) {
+            .sidebar {
+                position: static;
+                width: 90%;
+                margin: 20px auto;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 <body>
 
+    <label for="menu-mobile" class="menu-mobile">☰ Menu</label>
+    <input type="checkbox" id="menu-mobile" role="button">
+
     <nav>
-        <label for="menu-mobile" class="menu-mobile">Menu</label>
-        <input type="checkbox" id="menu-mobile" role="button">
         <ul>
             <li class="menu-html"><a href="#">HTML</a>
                 <ul class="submenu">
@@ -90,15 +200,9 @@
                 </ul>
             </li>
             <li class="menu-contact"><a href="carte.html">Contact</a></li>
-                <ul class="submenu">
-                    <li><a href="carte.html">Contact</a></li>
-                    <li><a href="lettredemotivationstage.rtf">Lettre de motivation</a></li>
-                    <li><a href="cv.html">CV</a></li>
-                </ul>
         </ul>
     </nav>
 
-    <!-- Ajout de la section d'explication sur le côté -->
     <aside class="sidebar">
         <h2>À propos du site</h2>
         <p>Ce site regroupe toutes les missions réalisées en première année de BTS SIO SLAM.</p>
