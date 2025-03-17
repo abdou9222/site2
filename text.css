@@ -1,7 +1,7 @@
 body {
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-    background-image: url(https://64.media.tumblr.com/dfa32a0d786fe7056476c7739b14c4a6/tumblr_nr01fzhkwp1s8yicyo1_540.gifv); /* Remplacez 'votre-gif.gif' par le chemin vers votre GIF */
+    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F629870697878402616%2F&psig=AOvVaw2zoerq9CbMHf9e0kfEk3c3&ust=1742306962140000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOCnjK6lkYwDFQAAAAAdAAAAABAX); /* Remplacez 'votre-gif.gif' par le chemin vers votre GIF */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
