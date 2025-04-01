@@ -1,7 +1,7 @@
 body {
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-    background-image: url(goku.gif);
+    background-image: url("goku.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
